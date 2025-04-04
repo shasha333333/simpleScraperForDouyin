@@ -1,5 +1,8 @@
 import pandas as pd
 
+import config
+
+
 def read_author_urls_from_excel(file_path):
     """
     从 Excel 文件中读取 author_url 列的数据。
@@ -30,7 +33,7 @@ def read_author_urls_from_excel(file_path):
 # 示例调用
 if __name__ == "__main__":
     # 目标 Excel 文件路径
-    excel_file = "目标博主名单.xlsx"
+    excel_file = config.AUTHOR_LIST_FILE
 
     # 读取 author_url
     author_urls = read_author_urls_from_excel(excel_file)

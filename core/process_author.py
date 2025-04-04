@@ -10,6 +10,8 @@ import logging
 import os
 import time
 
+import config
+
 # 配置日志
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -17,7 +19,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 CHROME_DRIVER_PATH = r'D:\Anaconda3\chromedriver-win64\chromedriver.exe'
 
 # 博主视频数据保存目录
-OUTPUT_DIR = "./博主视频数据"
+OUTPUT_DIR = config.AUTHOR_LIST_OUTPUT_DIR
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 

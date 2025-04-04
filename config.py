@@ -7,8 +7,15 @@ BASE_DIR = Path(__file__).resolve().parent
 # ChromeDriver 路径
 CHROME_DRIVER_PATH = os.path.join(BASE_DIR, "chromedriver.exe")
 
+# 常量配置
+AUTHOR_LIST_FILE = "../数据收集/目标博主名单.xlsx"
+STATISTICS_FILE = "../数据收集/统计数据.xlsx"
+MAX_WORKERS = 6  # 并行处理的线程数
+
 # 博主视频数据保存目录
-OUTPUT_DIR = os.path.join(BASE_DIR, "博主视频数据")
+OUTPUT_DIR = "../数据收集/统计数据"
+AUTHOR_LIST_OUTPUT_DIR = "../数据收集/博主视频数据"
+# 博主视频数据保存目录
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # 日志配置

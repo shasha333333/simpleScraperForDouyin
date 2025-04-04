@@ -131,7 +131,7 @@ def extract_video_info(wait):
     try:
         author_element = wait.until(
             EC.presence_of_element_located(
-                (By.XPATH, '//*[@id="douyin-right-container"]/div[2]/div/div/div[1]/div[4]/div/div[1]/div[2]/a/div/span/span/span/span/span/span')
+                (By.XPATH, '//*[@id="douyin-right-container"]/div[2]/div/div/div[2]/div/div[1]/div[2]/a/div/span/span/span/span/span/span')
             )
         )
         video_info['博主'] = author_element.text.strip()
